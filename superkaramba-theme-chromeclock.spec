@@ -19,20 +19,20 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 ChromeClock theme for superkaramba.
 
 %description -l pl
-Motyw ChromeClock do superkaramba.
+Motyw ChromeClock do superkaramby.
 
 %prep
 %setup -q -c
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
 		
-install ChromeClock/*.png $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock/
-install ChromeClock/*.py $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock/
-install ChromeClock/*.pyc $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock/
-install ChromeClock/*.theme $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock/
+install ChromeClock/*.png $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
+install ChromeClock/*.py $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
+install ChromeClock/*.pyc $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
+install ChromeClock/*.theme $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
