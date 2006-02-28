@@ -27,7 +27,7 @@ Motyw ChromeClock do superkaramby.
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
-		
+
 install ChromeClock/*.png $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
 install ChromeClock/*.py $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
 install ChromeClock/*.pyc $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/ChromeClock
@@ -36,7 +36,7 @@ install ChromeClock/*.theme $RPM_BUILD_ROOT%{_datadir}/themes/superkaramba/Chrom
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%files 
+%files
 %defattr(644,root,root,755)
 %dir %{_datadir}/themes/superkaramba/ChromeClock
 %{_datadir}/themes/superkaramba/ChromeClock/*.png
