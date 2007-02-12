@@ -2,7 +2,7 @@
 %define		theme	ChromeClock
 
 Summary:	superkaramba - ChromeClock theme
-Summary(pl.UTF-8):   superkaramba - motyw ChromeClock
+Summary(pl.UTF-8):	superkaramba - motyw ChromeClock
 Name:		superkaramba-theme-%{theme}
 Version:	1
 Release:	1
